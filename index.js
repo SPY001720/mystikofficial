@@ -14,19 +14,7 @@ bot.on('ready', () => {
                 message.reply("")
             }
 
-        if (message.content === prefix+ "Mystik"){
-            var help_embed = new Discord.RichEmbed()
-                .setColor('#B9121B')
-                .addField("Liste des commandes :"," Voici les commandes du Bot !")
-                .addField("!mention", "Cette commande permet de savoir son nom discord en se mentionnant.")
-                .addField("!infos", "Cette commande permet de vous informer sur le serveur.")
-                .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
-                .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
-                .addField("!liens", "Cette commande vous affiches les liens utiles")
-            message.channel.sendEmbed(help_embed);
-        }
-            
-        if (message.content === prefix+ "mystik"){
+        if (message.content === prefix+ "Mystik", "mystik"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
                 .addField("Liste des commandes :"," Voici les commandes du Bot !")
