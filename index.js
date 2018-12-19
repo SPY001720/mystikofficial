@@ -13,7 +13,6 @@ bot.on('ready', () => {
             if (message.content === "!mention"){
                 message.reply("")
             }
-    });
 
         if (message.content === prefix+ "Mystik"){
             var help_embed = new Discord.RichEmbed()
@@ -58,5 +57,7 @@ bot.on('ready', () => {
                 .addField("Administrateurs", "Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)\n A Fromage de chevre\n Petit enfant arrogant")
             message.channel.sendEmbed(help_embed);
         }
+            
+    });
 
     bot.login(token);
