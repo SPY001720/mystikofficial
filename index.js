@@ -47,6 +47,18 @@ bot.on('ready', () => {
                 .addField("Site Web :", "https://loloxcommunity.com/")
             message.channel.sendEmbed(help_embed);
         }
+            
+        if (message.content === prefix+ "liens"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#AEEE00')
+                .addField("Liens utiles :")
+                .addField("Workshop MystikRP :", "https://steamcommunity.com/sharedfiles/filedetails/?id=1184169554")
+                .addField("Discord MystikRP :", "https://discord.gg/JuhH6mZ")
+                .addField("Chaîne YouTube Lolox :", "https://www.youtube.com/channel/UCQmyH_HI5Sl41oBqGw7o7gw")
+                .addField("Chaîne Twitch Lolox :", "https://www.twitch.tv/lolox_fr")
+                .addField("Site Web :", "https://loloxcommunity.com/")
+            message.channel.sendEmbed(help_embed);
+        }            
  
         if (message.content === prefix+ "maj"){
             var help_embed = new Discord.RichEmbed()
