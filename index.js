@@ -13,11 +13,6 @@ bot.on('ready', () => {
             if (message.content === "!mention"){
                 message.reply("")
             }
-            
-                    bot.on('message', message => {
-            if (message.content === "!afkmanger"){
-                message.reply("vas manger , ne le dérangez pas !")
-            }
 
         if (message.content === prefix+ "Mystik"){
             var help_embed = new Discord.RichEmbed()
