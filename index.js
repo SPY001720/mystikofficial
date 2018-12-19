@@ -8,7 +8,12 @@ bot.on('ready', () => {
     bot.user.setPresence({ game: { name: '[!Mystik] <🔱 𝓢𝓟𝓨 🔱>', type: 0}})
     console.log("Bot pret");
 });
- 
+
+        bot.on('message', message => {
+            if (message.content === "!afkmanger"){
+                message.reply("vas manger , ne le dérangez pas !")
+            }
+
         bot.on('message', message => {
             if (message.content === "!mention"){
                 message.reply("")
