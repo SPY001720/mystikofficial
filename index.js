@@ -53,7 +53,7 @@ bot.on('ready', () => {
         if (message.content === prefix+ "liens"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
-                .addField("Liens utiles :")
+                .addField("Liens utiles :", "Les liens utiles pour MystikRP sont ici !")
                 .addField("Workshop MystikRP :", "https://steamcommunity.com/sharedfiles/filedetails/?id=1184169554")
                 .addField("Discord MystikRP :", "https://discord.gg/JuhH6mZ")
                 .addField("Chaîne YouTube Lolox :", "https://www.youtube.com/channel/UCQmyH_HI5Sl41oBqGw7o7gw")
