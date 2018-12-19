@@ -65,7 +65,7 @@ bot.on('ready', () => {
                 .addField("Fondateur", "Lolox")
                 .addField("Mappeur", "Pelisma")
                 .addField("Superadmins", "Kobralost\n Stylaxx")
-                .addField("Administrateurs", "Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)\n A Fromage de chevre\n Petit enfant arrogant")
+                .addField("Administrateurs", "Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)\n A Fromage de chevre")
             message.channel.sendEmbed(help_embed);
         }
 
