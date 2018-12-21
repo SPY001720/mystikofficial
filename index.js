@@ -9,6 +9,11 @@ bot.on('ready', () => {
     console.log("Bot pret");
 });
 
+            bot.on('message', message => {
+                if (message.content === "!mention"){
+                    message.reply("")
+                }
+
         if (message.content === prefix+ "Mystik"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
@@ -33,7 +38,7 @@ bot.on('ready', () => {
             message.channel.sendEmbed(help_embed);
         }
 
-        if (message.content === prefix+ "plaite"){
+        if (message.content === prefix+ "plainte"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
                 .addField("Plainte :"," Merci de votre plainte , nous allons la traité dès que possible ! ✅")
