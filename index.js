@@ -73,8 +73,8 @@ bot.on('ready', () => {
                 .addField("Staff du serveur :"," MystikRP")
                 .addField("Fondateur", "Lolox")
                 .addField("Mappeur", "Pelisma")
-                .addField("Superadmins", "Kobralost\n Stylaxx")
-                .addField("Administrateurs", "Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)\n A Fromage de chevre\n Petit enfant arrogant")
+                .addField("Superadmins", "Kobralost")
+                .addField("Administrateurs", "Stylaxx\n Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)\n A Fromage de chevre\n Petit enfant arrogant")
             message.channel.sendEmbed(help_embed);
         }
 
