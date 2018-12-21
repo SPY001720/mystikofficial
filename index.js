@@ -9,6 +9,16 @@ bot.on('ready', () => {
     console.log("Bot pret");
 });
 
+bot.on("guildMemberAdd", member => {
+    let role = member.guild.roles.find("name", "Viewers");
+    member.guild.channels.find("name", "général").send(`:ok_hand: ${member.user.username} bienvenue sur le discord de MystikRP !`)
+    member.addRole(role)
+})
+
+bot.on('guildMemberRemove', member => {
+    member.guild.channels.find("name", "général").send(`:weary: ${member.user.username} vien de nous quitter ! Séchez vos larmes aussi-non je vais pleurer :weary: !`)
+})
+
             bot.on('message', message => {
                 if (message.content === "!mention"){
                     message.reply("")
