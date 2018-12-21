@@ -22,7 +22,6 @@ bot.on('ready', () => {
                 .addField("!infos", "Cette commande permet de vous informer sur le serveur.")
                 .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
                 .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
-                .addField("!plainte", "Cette commande permet de déposer une plainte contre un joueur : !plainte <message de plainte")
             message.channel.sendEmbed(help_embed);
         }
 
@@ -34,14 +33,6 @@ bot.on('ready', () => {
                 .addField("!infos", "Cette commande permet de vous informer sur le serveur.")
                 .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
                 .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
-                .addField("!plainte", "Cette commande permet de déposer une plainte contre un joueur : !plainte <message de plainte")
-            message.channel.sendEmbed(help_embed);
-        }
-
-        if (message.content === prefix+ "plainte"){
-            var help_embed = new Discord.RichEmbed()
-                .setColor('#B9121B')
-                .addField("Plainte :"," Merci de votre plainte , nous allons la traité dès que possible ! ✅")
             message.channel.sendEmbed(help_embed);
         }
 
