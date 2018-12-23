@@ -60,11 +60,35 @@ bot.on('guildMemberRemove', member =>{
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
                 .addField("Mises à jours au total :"," **3**")
+                .addField("2.2", "!2.2")
+                .addField("2.3", "!2.3")
+                .addField("2.4 (Future MAJ)", "!2.3")
+            message.channel.sendEmbed(help_embed);
+        }
+                
+        if (message.content === prefix+ "2.2"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#AEEE00')
+                .addField("Mises à jour 2.2 :","Modifications sur le serveur :")
                 .addField("2.2", "**-Optimisation des addons + ajout d'une préconfig pour améliorer la fluidité et réduire la perte d'fps**\n **-Remise en fonction du métier entrepreneur**\n **-Modification des grades de gendarmes**\n **-Modification des skins de différent jobs**\n **-Debug de plusieurs addons**\n **-Debug du ban plus importation des règles en jeu**\n **-Amélioration des performance du serveur**\n **-Ajout de munition directement dans les armes du serveur en tant qu'agent de la bac policier , gign etc ....**\n **-Modification de certains véhicules**\n **-Debug de l'addon maire**\n **-Ajout du métier fermier + pêcheur**")
+            message.channel.sendEmbed(help_embed);
+        } 
+                
+        if (message.content === prefix+ "2.3"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#AEEE00')
+                .addField("Mises à jour 2.3 :","Modifications sur le serveur :")
                 .addField("2.3", "**-Optimisation des addons + Boost FPS**\n **-Nerf de certains métier**\n **-Modification des grades de gendarmes**\n **-Modification de la map**\n **-Modification du systeme de vente d'appartement**\n **-Amélioration des performance du serveur**\n **-Debug de l'addon maire**\n **-Ajout du métier fermier (Animaux demain)**\n **-Ajout d'un nouveau systeme pénitencier (SOON)**")
+            message.channel.sendEmbed(help_embed);
+        }
+                
+        if (message.content === prefix+ "2.3"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#AEEE00')
+                .addField("Mises à jour 2.4 :","Modifications sur le serveur :")
                 .addField("2.4 (Future MAJ)", "**-Modification des véhicules possédant des sirènes + ajout du VCMOD ELS**\n **-Ajout des plaques d'immatriculation**\n **-Ajout des Animaux (Normalement)**\n **-Ajout dans les warn des sanctions déjà crée** \n **-Optimisation du Worshop** \n **-Optimisation du join au serveur** \n **-Optimisation des Addons** \n **-Stabilisation du serveur**\n **-Suppression du Nom Roleplay + de la vie + Changement de métier**\n **-Traduction du Darkrp** \n **-Ajout de deux nouveaux métiers mystère !**\n **-Réglages de certains beugs** \n **-Ajout de munitions lors du spawn en gendarme ou autres métiers** \n **-Ajout de nouveaux grades pour la police , gign**\n **-Ajout de grades pour l'agent de sécurité** \n **-Ajout de grades pour le Pompier**\n **-Ajout de grades pour le Médecin **")
             message.channel.sendEmbed(help_embed);
-        }        
+        } 
 
         if (message.content === prefix+ "staff"){
             var help_embed = new Discord.RichEmbed()
