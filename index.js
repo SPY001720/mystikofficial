@@ -23,11 +23,11 @@ bot.on('guildMemberRemove', member =>{
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
                 .addField("Liste des commandes :"," Voici les commandes du Bot !")
-                .addField("!mention", "Cette commande permet de savoir son nom discord en se mentionnant.")
-                .addField("!mystik", "Cette commande permet de vous informer sur le serveur.")
+                .addField("!infos", "Cette commande permet de vous informer sur le serveur.")
                 .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
                 .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
                 .addField("!connect", "Cette commande permet de te connecter au serveur MystikRP depuis discord !")
+                .addField("!liens", "Cette commande vous affiche les liens utiles du discord ou du serveur."
             message.channel.sendEmbed(help_embed);
         }
                 
@@ -39,15 +39,16 @@ bot.on('guildMemberRemove', member =>{
             message.channel.sendEmbed(help_embed);
         }            
                 
-        if (message.content === prefix+ "mystik"){
+        if (message.content === prefix+ "infos"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
-                .addField("Informations :","MystikRP est un serveur Rôleplay qui est composé d'un map personnalisé crée par Pelisma (Mappeur de MystikRP), MystikRP contient parfois ses propres addons !")
+                .addField("MystikRP :","MystikRP est un serveur Rôleplay qui est composé d'un map personnalisé crée par Pelisma (Mappeur de MystikRP), MystikRP contient parfois ses propres addons !")
                 .addField("Nom du serveur :", "[FR] MYSTIK ROLEPLAY | Map & Addons exclus | LoloxCommunity.com")
                 .addField("IP :", "164.132.116.56:27260")
                 .addField("Gamemode :", "DarkRP")
                 .addField("Map :", "rp_florida_v2")
                 .addField("Site Web :", "https://loloxcommunity.com/")
+                .addField("Workshop :", "https://steamcommunity.com/sharedfiles/filedetails/?id=1184169554")
             message.channel.sendEmbed(help_embed);
         }
  
@@ -58,6 +59,18 @@ bot.on('guildMemberRemove', member =>{
                 .addField("2.2", "!2.2")
                 .addField("2.3", "!2.3")
                 .addField("2.4 (Future MAJ)", "!2.3")
+            message.channel.sendEmbed(help_embed);
+        }
+
+        if (message.content === prefix+ "liens"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#AEEE00')
+                .addField("Iliens :","voici les liens utiles (YouTube , Workshop , Twitch...)")
+                .addField("YouTube Lolox", "https://www.youtube.com/channel/UCQmyH_HI5Sl41oBqGw7o7gw")
+                .addField("Twitch Lolox", "https://www.twitch.tv/lolox_fr/")
+                .addField("Site Web", "https://LoloxCommunity.com/")
+                .addField("Discord MystikRP", "https://discord.gg/Yxx6CAM")
+                .addField("Workshop MystikRP", "https://steamcommunity.com/sharedfiles/filedetails/?id=1184169554")
             message.channel.sendEmbed(help_embed);
         }
                 
