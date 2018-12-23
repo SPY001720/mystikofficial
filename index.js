@@ -5,7 +5,7 @@ var prefix = ("!");
 
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: '[!Mystik] <🔱 𝓢𝓟𝓨 🔱>', type: 0}})
+    bot.user.setPresence({ game: { name: '[!help] <🔱 𝓢𝓟𝓨 🔱>', type: 0}})
     console.log("Bot pret");
 });
 
@@ -24,29 +24,18 @@ bot.on('guildMemberRemove', member =>{
                     message.reply("")
                 }
 
-        if (message.content === prefix+ "Mystik"){
+        if (message.content === prefix+ "help"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
                 .addField("Liste des commandes :"," Voici les commandes du Bot !")
                 .addField("!mention", "Cette commande permet de savoir son nom discord en se mentionnant.")
-                .addField("!infos", "Cette commande permet de vous informer sur le serveur.")
+                .addField("!mystik", "Cette commande permet de vous informer sur le serveur.")
                 .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
                 .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
             message.channel.sendEmbed(help_embed);
         }
 
         if (message.content === prefix+ "mystik"){
-            var help_embed = new Discord.RichEmbed()
-                .setColor('#B9121B')
-                .addField("Liste des commandes :"," Voici les commandes du Bot !")
-                .addField("!mention", "Cette commande permet de savoir son nom discord en se mentionnant.")
-                .addField("!infos", "Cette commande permet de vous informer sur le serveur.")
-                .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
-                .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
-            message.channel.sendEmbed(help_embed);
-        }
-
-        if (message.content === prefix+ "infos"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
                 .addField("Informations :","MystikRP est un serveur Rôleplay qui est composé d'un map personnalisé crée par Pelisma (Mappeur de MystikRP), MystikRP contient parfois ses propres addons !")
