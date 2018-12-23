@@ -32,9 +32,18 @@ bot.on('guildMemberRemove', member =>{
                 .addField("!mystik", "Cette commande permet de vous informer sur le serveur.")
                 .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
                 .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
+                .addField("!connect", "Cette commande permet de te connecter au serveur MystikRP depuis discord !")
             message.channel.sendEmbed(help_embed);
         }
-
+                
+        if (message.content === prefix+ "connect"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#B9121B')
+                .addField("Clique ici pour te connecter au serveur MystikRP :","[FR] MYSTIK ROLEPLAY | Map & Addons exclus | LoloxCommunity.com")
+                .addField("Se connecter sur MystikRP :", "steam://connect/164.132.116.56:27260")
+            message.channel.sendEmbed(help_embed);
+        }            
+                
         if (message.content === prefix+ "mystik"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
