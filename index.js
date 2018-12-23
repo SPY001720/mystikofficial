@@ -82,7 +82,7 @@ bot.on('guildMemberRemove', member =>{
             message.channel.sendEmbed(help_embed);
         }
                 
-        if (message.content === prefix+ "2.3"){
+        if (message.content === prefix+ "2.4"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
                 .addField("Mises à jour 2.4 :","Modifications sur le serveur :")
