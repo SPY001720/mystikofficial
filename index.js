@@ -19,6 +19,11 @@ bot.on('guildMemberRemove', member =>{
     member.guild.channels.find("name", "general").send(`:weary: ${member.user.username} vien de nous quitter ! Séchez vos larmes aussi-non je vais pleurer :weary: !`)
 })
 
+            bot.on('message', message => {
+                if (message.content === "!mention"){
+                    message.reply("")
+                }
+
         if (message.content === prefix+ "help"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
@@ -27,7 +32,7 @@ bot.on('guildMemberRemove', member =>{
                 .addField("!staff", "Cette commande est utile si vous avez besoins de parler a un staff d'un certain grade , elle permet d'afficher la liste des staff de MystikRP ainsi que leur grade.")
                 .addField("!maj", "Cette commande permet de voir les mises à jours prévus ou déjâ faites sur MystikRP !")
                 .addField("!connect", "Cette commande permet de te connecter au serveur MystikRP depuis discord !")
-                .addField("!liens", "Cette commande vous affiche les liens utiles du discord ou du serveur."
+                .addField("!liens", "Cette commande vous affiche les liens utiles du discord ou du serveur.")
             message.channel.sendEmbed(help_embed);
         }
                 
