@@ -19,11 +19,6 @@ bot.on('guildMemberRemove', member =>{
     member.guild.channels.find("name", "general").send(`:weary: ${member.user.username} vien de nous quitter ! Séchez vos larmes aussi-non je vais pleurer :weary: !`)
 })
 
-            bot.on('message', message => {
-                if (message.content === "!mention"){
-                    message.reply("")
-                }
-
         if (message.content === prefix+ "help"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
@@ -96,8 +91,8 @@ bot.on('guildMemberRemove', member =>{
                 .addField("Staff du serveur :"," MystikRP")
                 .addField("Fondateur", "Lolox")
                 .addField("Mappeur", "Pelisma")
-                .addField("Superadmins", "Kobralost")
-                .addField("Administrateurs", "Stylaxx\n Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)\n A Fromage de chevre\n Petit enfant arrogant")
+                .addField("Superadmin", "Kobralost")
+                .addField("Administrateurs", "Stylaxx\n Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)")
             message.channel.sendEmbed(help_embed);
         }
 
