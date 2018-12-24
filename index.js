@@ -64,10 +64,10 @@ bot.on('guildMemberRemove', member =>{
                 .addField("2.2", "!2.2")
                 .addField("2.3", "!2.3")
                 .addField("2.4", "!2.4")
-                .addField("2.5 (Future MAJ)", "!2.5")"
+                .addField("2.5 (Future MAJ)", "!2.5")
             message.channel.sendEmbed(help_embed);
         }
-
+        
         if (message.content === prefix+ "liens"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
