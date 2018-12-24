@@ -60,10 +60,11 @@ bot.on('guildMemberRemove', member =>{
         if (message.content === prefix+ "maj"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
-                .addField("Mises à jours au total :"," **3**")
+                .addField("Mises à jours au total :"," **4**")
                 .addField("2.2", "!2.2")
                 .addField("2.3", "!2.3")
-                .addField("2.4 (Future MAJ)", "!2.3")
+                .addField("2.4", "!2.4")
+                .addField("2.5 (Future MAJ)", "!2.5")"
             message.channel.sendEmbed(help_embed);
         }
 
@@ -99,7 +100,15 @@ bot.on('guildMemberRemove', member =>{
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
                 .addField("Mises à jour 2.4 :","Modifications sur le serveur :")
-                .addField("2.4 (Future MAJ)", "**-Modification des véhicules possédant des sirènes + ajout du VCMOD ELS**\n **-Ajout des plaques d'immatriculation**\n **-Ajout des Animaux (Normalement)**\n **-Ajout dans les warn des sanctions déjà crée** \n **-Optimisation du Worshop** \n **-Optimisation du join au serveur** \n **-Optimisation des Addons** \n **-Stabilisation du serveur**\n **-Suppression du Nom Roleplay + de la vie + Changement de métier**\n **-Traduction du Darkrp** \n **-Ajout de deux nouveaux métiers mystère !**\n **-Réglages de certains beugs** \n **-Ajout de munitions lors du spawn en gendarme ou autres métiers** \n **-Ajout de nouveaux grades pour la police , gign**\n **-Ajout de grades pour l'agent de sécurité** \n **-Ajout de grades pour le Pompier**\n **-Ajout de grades pour le Médecin **")
+                .addField("2.4", "**-Modification des véhicules possédant des sirènes + ajout du VCMOD ELS**\n **-Ajout des plaques d'immatriculation**\n **-Ajout des Animaux (Normalement)**\n **-Ajout dans les warn des sanctions déjà crée** \n **-Optimisation du Worshop** \n **-Optimisation du join au serveur** \n **-Optimisation des Addons** \n **-Stabilisation du serveur**\n **-Suppression du Nom Roleplay + de la vie + Changement de métier**\n **-Traduction du Darkrp** \n **-Ajout de deux nouveaux métiers mystère !**\n **-Réglages de certains beugs** \n **-Ajout de munitions lors du spawn en gendarme ou autres métiers** \n **-Ajout de nouveaux grades pour la police , gign**\n **-Ajout de grades pour l'agent de sécurité** \n **-Ajout de grades pour le Pompier**\n **-Ajout de grades pour le Médecin **")
+            message.channel.sendEmbed(help_embed);
+        }
+                
+        if (message.content === prefix+ "2.5"){
+            var help_embed = new Discord.RichEmbed()
+                .setColor('#AEEE00')
+                .addField("Mises à jour 2.5 :","Modifications sur le serveur :")
+                .addField("2.5 (Future MAJ)", "**- Nouvel hébergeur (MTX)**\n **- Nouvelle Map**\n **- Nouveaux Addons**\n **- Anti Métagaming (Nom Rp caché , Voix lorsque l'on parle caché )**\n **- Commande Kill désactivé** \n **- Optimisation de la collection passant de 200 addons a -100**\n **- Reset de l'argent , Véhicules , Cosmétiques etc ...**\n **- Ajout de nouveaux métiers tels que Fermier (Animaux) , Police scientifique** \n **- Ajout d'un système pour se rendre lorsque vous viser avec une arme a feux**\n **- Réglages de certains beugs mineur**\n **- Ajout de grade pour le médecin , pompier .**\n **- Ajout de nouvels outils dans la classe policier "Radar portatif"**\n **- Modification de certains skins**\n **- Debug pour tout les métiers lorsque vous mourrez le corp apparait** \n **- Ajout de munition au spawn** \n **- Ajout du nouvel addon maire (Crée par Shadow)**\n **- Nouveau tab avec plus de fonctionnalités**\n **- Debug du menu C**\n **- Ajout d'un nouveaux système de spawn de props**\n **- Baisse des prix des appartements** \n **- Nouveaux téléphone** \n **- Nouveaux système de clés** \n **- Debug du permis de conduire** \n **- Ajout de nouveaux printers sur le darknet .**\n **- Baisse des prix pour le bitminer  + rentabilité augmenté** \n **- Quelque modification au niveau de l'interface joueur** \n **- Ajout de salaire réel tel que 1400 pour le Chomeur qui arrive toute les 60 minutes** ")
             message.channel.sendEmbed(help_embed);
         } 
 
@@ -110,7 +119,7 @@ bot.on('guildMemberRemove', member =>{
                 .addField("Fondateur", "Lolox")
                 .addField("Mappeur", "Pelisma")
                 .addField("Superadmin", "Kobralost")
-                .addField("Administrateurs", "Stylaxx\n Skyflix\n Alex Backo\n El Famoso Marvino\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)")
+                .addField("Administrateurs", "Stylaxx\n Skyflix\n Alex Backo\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)")
             message.channel.sendEmbed(help_embed);
         }
 
