@@ -5,7 +5,7 @@ var prefix = ("!");
 
 
 bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: '[!help] <from 🔱 𝓢𝓟𝓨 🔱>', type: 0}})
+    bot.user.setPresence({ game: { name: '[!aide] <from 🔱 𝓢𝓟𝓨 🔱>', type: 0}})
     console.log("Bot pret");
 });
 
@@ -24,7 +24,7 @@ bot.on('guildMemberRemove', member =>{
                     message.reply("")
                 }
 
-        if (message.content === prefix+ "help"){
+        if (message.content === prefix+ "aide"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#B9121B')
                 .addField("Liste des commandes :"," Voici les commandes du Bot !")
@@ -107,8 +107,7 @@ bot.on('guildMemberRemove', member =>{
          if (message.content === prefix+ "2.5"){
             var help_embed = new Discord.RichEmbed()
                 .setColor('#AEEE00')
-                .addField("Mises à jour 2.5 :","Modifications sur le serveur :")
-                .addField("2.5", "**- Nouvel hébergeur (MTX)**\n **- Nouvelle Map**\n **- Nouveaux Addons**\n **- Anti Métagaming (Nom Rp caché , Voix lorsque l'on parle caché )**\n **- Commande Kill désactivé** \n **- Optimisation de la collection passant de 200 addons a -100**\n **- Reset de l'argent , Véhicules , Cosmétiques etc ...**\n **- Ajout de nouveaux métiers tels que Fermier (Animaux) , Police scientifique** \n **- Ajout d'un système pour se rendre lorsque vous viser avec une arme a feux**\n **- Réglages de certains beugs mineur**\n **- Ajout de grade pour le médecin , pompier .**\n **- Ajout de nouvels outils dans la classe policier "Radar portatif"**\n **- Modification de certains skins**\n **- Debug pour tout les métiers lorsque vous mourrez le corp apparait** \n **- Ajout de munition au spawn** \n **- Ajout du nouvel addon maire (Crée par Shadow)**\n **- Nouveau tab avec plus de fonctionnalités**\n **- Debug du menu C**\n **- Ajout d'un nouveaux système de spawn de props**\n **- Baisse des prix des appartements** \n **- Nouveaux téléphone** \n **- Nouveaux système de clés** \n **- Debug du permis de conduire** \n **- Ajout de nouveaux printers sur le darknet .**\n **- Baisse des prix pour le bitminer  + rentabilité augmenté** \n **- Quelque modification au niveau de l'interface joueur** \n **- Ajout de salaire réel tel que 1400 pour le Chomeur qui arrive toute les 60 minutes**")
+                .addField("Mises à jour 2.5 :","Commande non-disponible pour le moment , merci de ré-essayer !")    
             message.channel.sendEmbed(help_embed);
         }
                 
