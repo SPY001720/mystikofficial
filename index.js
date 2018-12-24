@@ -11,7 +11,7 @@ bot.on('ready', () => {
 
 bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "Viewers");
-    member.guild.channels.find("name", "general").send(`:ok_hand: ${member.user.username} bienvenue sur le discord de MystikRP !`)
+    member.guild.channels.find("name", "general").send(`:ok_hand: ${member.user.username} bienvenue sur le discord de MystikRP ! Pour plus d'infos fait !aide je te répondrai !`)
     member.addRole(role)
 })
 
