@@ -118,7 +118,8 @@ bot.on('guildMemberRemove', member =>{
                 .addField("Staff du serveur :"," MystikRP")
                 .addField("Fondateur", "Lolox")
                 .addField("Mappeur", "Pelisma")
-                .addField("Superadmin", "Kobralost")
+                .addField("Codeur", "Shadow")
+                .addField("Superadmin / Développeur", "Kobralost")
                 .addField("Administrateurs", "Stylaxx\n Skyflix\n Alex Backo\n 🔱 𝓢𝓟𝓨 🔱\n ChickenNuggets (Hoie)")
             message.channel.sendEmbed(help_embed);
         }
